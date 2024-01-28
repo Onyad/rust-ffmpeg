@@ -176,6 +176,7 @@ impl<'a> Best<'a> {
                 0,
             );
 
+            println!("biba ffmpeg: {:?}", decoder);
             if index >= 0 && decoder != ptr::null_mut() {
                 Some(Stream::wrap(self.context, index as usize))
             } else {
